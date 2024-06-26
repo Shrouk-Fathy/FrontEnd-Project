@@ -33,9 +33,9 @@ function PageMood(){
     });
 
     if(Body.classList.contains("dark-mode")){
-        Img.src = "/images/moon.png";
+        Img.src = "images/moon.png";
     }
     else{
-        Img.src = "/images/sun.jpg";
+        Img.src = "images/sun.jpg";
     }
 }
