@@ -425,11 +425,14 @@ footer>div .top img{
 /* Styles for phones (576px to 768px width) */
 @media (max-width: 900px) {
  
-    .container .nav-bar .left-cont .nav-list{
+    .container .nav-bar .left-cont .nav-list , .right-cont .data{
         display: none;
     }
     .nav-bar .left-cont{
         grid-template-columns: 100%;
+    }
+    .right-cont .mode{
+        transform: translateX(-2em);
     }
     .right-cont{
         display: flex;
@@ -456,7 +459,7 @@ footer>div .top img{
         flex-direction: column;
     }
     button{
-        padding: .6em 1em;
+        padding: .8em 1.6em;
         font-size: 1.02rem;
     }
     .container .sec-4 .two .btn{
