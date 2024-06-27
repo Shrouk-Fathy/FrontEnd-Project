@@ -128,6 +128,7 @@ section{
 }
 .logo img{
     width: 60%;
+    height: 3em;
 }
 .right-cont{
     min-height: 9vh;
@@ -423,14 +424,40 @@ footer>div .top img{
 
 /* Styles for phones (576px to 768px width) */
 @media (max-width: 900px) {
-    .container .nav-bar{
-        grid-template-rows: repeat(2 , minmax(0 , 1fr));
+ 
+    .container .nav-bar .left-cont .nav-list{
+        display: none;
+    }
+    .nav-bar .left-cont{
         grid-template-columns: 100%;
     }
     .right-cont{
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+    h1{
+        font-size: 2.25rem;
+        width: 100%;
+    }
+    h2{
+        font-size: 1.99rem;
+    }
+    h3{
+        font-size: 1.55rem;
+    }
+    p{
+        font-size: 1rem;
+    }
+    button{
+        padding: .6em 1em;
+        font-size: 1.02rem;
+    }
+    .container .sec-4 .two .btn button{
+        padding: .5em 1em;
+    }
+    .container .sec-4 .two .select{
+        margin: auto;
     }
     .left-cont .nav-list ul li:not(:nth-child(1)):hover{
         background-color: var(--color-primary);
