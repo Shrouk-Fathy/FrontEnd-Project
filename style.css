@@ -433,7 +433,7 @@ footer>div .top img{
     }
     .right-cont{
         display: flex;
-        justify-content: center;
+        justify-content: flex-end;
         align-items: center;
     }
     h1{
@@ -449,15 +449,26 @@ footer>div .top img{
     p{
         font-size: 1rem;
     }
+    .sec-2 *,.sec-3 *,footer *,.sec-4 .three{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
     button{
         padding: .6em 1em;
         font-size: 1.02rem;
+    }
+    .container .sec-4 .two .btn{
+        justify-content: center;
+        align-items: center;
     }
     .container .sec-4 .two .btn button{
         padding: .5em 1em;
     }
     .container .sec-4 .two .select{
         margin: auto;
+        margin-top: 1em;
     }
     .left-cont .nav-list ul li:not(:nth-child(1)):hover{
         background-color: var(--color-primary);
@@ -467,22 +478,12 @@ footer>div .top img{
         grid-template-columns: 100%;
         grid-template-rows: repeat(3 , minmax(0 , 1fr));
     }
-    .container .sec-3{
-        grid-template-columns: 100%;
-        grid-template-rows: auto minmax(0 , 1fr);
-    }
     .container .sec-3 .b-cont{
         grid-template-columns: 100%;
         grid-template-rows: repeat(4 , minmax(0 , 1fr));
     }
     .container .sec-4 .two{
         display: grid;
-    }
-    .container .sec-4 .two .select select{
-       margin-top: 1em;
-    }
-    .container .sec-4 .three{
-        justify-content: center;
     }
     .container .sec-4 .four{
         grid-template-columns: 100%;
@@ -494,6 +495,9 @@ footer>div .top img{
     } 
     footer>div .top > div *{
         margin: auto;
+    }  
+    footer>div .top p{
+        text-align: center;
     }  
 }
 
